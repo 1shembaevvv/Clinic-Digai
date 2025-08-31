@@ -17,7 +17,6 @@ export const useMainBlockStore = create((set) => ({
             const fileUrl = response.data.background_image;
             if (fileUrl) {
                 set({ data: fileUrl, loading: false });
-                console.log(data);
                 return;
             }
         } catch (error) {
